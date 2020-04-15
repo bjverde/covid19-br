@@ -24,5 +24,8 @@ docs/man/
 docs/reference/
 reg_settings.py
 
+## VsCode
+.vscode
+
 ## Virtualenv
 venv_covid19/* 
