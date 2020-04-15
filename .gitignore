@@ -23,3 +23,6 @@ docs-build/
 docs/man/
 docs/reference/
 reg_settings.py
+
+## Virtualenv
+venv_covid19/* 
