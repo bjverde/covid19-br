@@ -2,7 +2,17 @@
 A Secretaria de Saúde do Distrito Federal publica boletins informativos sobre
 a COVID-19 em formato PDF. Os documentos são majoritariamente em formato de texto
 livre e possuem uma tabela com números referentes a casos da unidade da federação
-como um todo, sem disntinção de municípios ou regiões administrativas.
+como um todo, sem disntinção de municípios ou regiões administrativas
+até o dia 19/03/2020.
+
+Alterações do formato nos dias
+ - 20/03/2020
+ - 21/03/2020 - Não teve relatorio
+ - 22/03/2020 
+ - 23/03/2020
+ - 24/03/2020 - Não teve relatorio
+ - 25/03/2020 - Não teve relatorio
+ - 26/03/2020 - inicio dos dados por região, informando apenas os confirmados.
 """
 
 import re
