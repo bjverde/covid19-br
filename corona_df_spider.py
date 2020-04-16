@@ -169,13 +169,11 @@ class CoronaDFSpider(scrapy.Spider):
         }
 
     def parse_pdf02(self, response):
-        data = response.meta["row"]
-        boletim_data = data["boletim_data"]
-        year = boletim_data.year
-        month = boletim_data.month
-        day = boletim_data.day
+        boletim_data = response.meta["row"]["boletim_data"]
+        #pdf_text = getPdfText(response)
+        #print(pdf_text)
         return {
-            "date": f"{year}-{month}-{day}",
+            "date": f"{boletim_data.year}-{boletim_data.month:02d}-{boletim_data.day:02d}",
             "state": "DF",
             "city": "",
             "place_type": "state",
