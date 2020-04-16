@@ -24,6 +24,26 @@ import rows
 
 from utils import CleanIntegerField
 
+import datetime
+
+def getDataMarco01():
+    return datetime.datetime(2020, 3, 19)
+
+def getNumMes(nomeMes):
+    mes=["jan","fev","mar","abr"]
+    numMes = mes.index(nomeMes)
+    numMes = numMes + 1
+    return numMes
+
+def getDataBoletim(texto):
+    texto = texto.split('–')
+    texto = texto[1]
+    texto = texto.strip()
+    day = texto[0:2]
+    month = getNumMes(texto[2:5])
+    year = "20"+texto[5:7]
+    date = datetime.datetime(int(year), int(month), int(day))
+    return date
 
 BASE_PATH = Path(__file__).parent
 DOWNLOAD_PATH = BASE_PATH / "data" / "download"
@@ -64,7 +84,7 @@ class CoronaDFSpider(scrapy.Spider):
     start_urls = ["http://www.saude.df.gov.br/informativos-do-centro-de-operacoes-de-emergencia-coe"]
 
     def parse(self, response):
-
+        
         for link in response.xpath("//a[contains(@href, '.pdf')]"):
             data = {
                 "boletim_titulo": link.xpath(".//text()").extract_first(),
@@ -73,13 +93,16 @@ class CoronaDFSpider(scrapy.Spider):
             if not "informe" in data["boletim_titulo"].lower():
                 continue
 
-            yield scrapy.Request(
-                url=data["boletim_url"],
-                meta={"row": data},
-                callback=self.parse_pdf,
-            )
+            boletim_data = getDataBoletim(link.xpath(".//text()").extract_first())
+            if boletim_data <= getDataMarco01():
+                yield scrapy.Request(
+                    url=data["boletim_url"],
+                    meta={"row": data},
+                    callback=self.parse_pdf01,
+                )
 
-    def parse_pdf(self, response):
+
+    def parse_pdf01(self, response):
         filename = DOWNLOAD_PATH / Path(response.url).name
         with open(filename, mode="wb") as fobj:
             fobj.write(response.body)
