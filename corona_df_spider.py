@@ -26,28 +26,6 @@ from utils import CleanIntegerField
 
 import datetime
 
-def getDataMarco01():
-    return datetime.datetime(2020, 3, 19)
-
-def getDataMarcoAtual():
-    return datetime.datetime(2020, 3, 26)
-
-def getNumMes(nomeMes):
-    mes=["jan","fev","mar","abr"]
-    numMes = mes.index(nomeMes)
-    numMes = numMes + 1
-    return numMes
-
-def getDataBoletim(texto):
-    texto = texto.split('–')
-    texto = texto[1]
-    texto = texto.strip()
-    day = texto[0:2]
-    month = getNumMes(texto[2:5])
-    year = "20"+texto[5:7]
-    date = datetime.datetime(int(year), int(month), int(day))
-    return date
-
 BASE_PATH = Path(__file__).parent
 DOWNLOAD_PATH = BASE_PATH / "data" / "download"
 
@@ -80,6 +58,38 @@ RE_CASES_3 = re.compile(f"Caso[s]?\s+Notificado[s]?\s+Total\s+(Suspeito[s]?|Em\s
 RE_CASES = [RE_CASES_1,
             RE_CASES_2,
             RE_CASES_3]
+
+
+def getDataMarco01():
+    return datetime.datetime(2020, 3, 19)
+
+def getDataMarcoAtual():
+    return datetime.datetime(2020, 3, 26)
+
+def getNumMes(nomeMes):
+    mes=["jan","fev","mar","abr"]
+    numMes = mes.index(nomeMes)
+    numMes = numMes + 1
+    return numMes
+
+def getDataBoletim(texto):
+    texto = texto.split('–')
+    texto = texto[1]
+    texto = texto.strip()
+    day = texto[0:2]
+    month = getNumMes(texto[2:5])
+    year = "20"+texto[5:7]
+    date = datetime.datetime(int(year), int(month), int(day))
+    return date
+
+def getPdfText(response):
+    filename = DOWNLOAD_PATH / Path(response.url).name
+    with open(filename, mode="wb") as fobj:
+        fobj.write(response.body)
+
+    pdf_doc = rows.plugins.pdf.PyMuPDFBackend(filename)
+    pdf_text = "".join(item for item in pdf_doc.extract_text() if item.strip())
+    return pdf_text
 
 
 class CoronaDFSpider(scrapy.Spider):
@@ -116,12 +126,7 @@ class CoronaDFSpider(scrapy.Spider):
 
 
     def parse_pdf01(self, response):
-        filename = DOWNLOAD_PATH / Path(response.url).name
-        with open(filename, mode="wb") as fobj:
-            fobj.write(response.body)
-
-        pdf_doc = rows.plugins.pdf.PyMuPDFBackend(filename)
-        pdf_text = "".join(item for item in pdf_doc.extract_text() if item.strip())
+        pdf_text = getPdfText(response)
 
         for re_date in RE_DATES:
             date_search = re_date.search(pdf_text, re.IGNORECASE)
