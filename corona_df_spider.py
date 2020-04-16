@@ -29,6 +29,9 @@ import datetime
 def getDataMarco01():
     return datetime.datetime(2020, 3, 19)
 
+def getDataMarcoAtual():
+    return datetime.datetime(2020, 3, 26)
+
 def getNumMes(nomeMes):
     mes=["jan","fev","mar","abr"]
     numMes = mes.index(nomeMes)
@@ -86,20 +89,30 @@ class CoronaDFSpider(scrapy.Spider):
     def parse(self, response):
         
         for link in response.xpath("//a[contains(@href, '.pdf')]"):
-            data = {
-                "boletim_titulo": link.xpath(".//text()").extract_first(),
-                "boletim_url": urljoin(response.url, link.xpath(".//@href").extract_first()),
-            }
-            if not "informe" in data["boletim_titulo"].lower():
+            boletim_titulo = link.xpath(".//text()").extract_first()
+
+            if not "informe" in boletim_titulo.lower():
                 continue
 
             boletim_data = getDataBoletim(link.xpath(".//text()").extract_first())
+            data = {
+                "boletim_titulo": boletim_titulo,
+                "boletim_data": boletim_data,
+                "boletim_url" : urljoin(response.url, link.xpath(".//@href").extract_first()),
+            }
+            
             if boletim_data <= getDataMarco01():
                 yield scrapy.Request(
                     url=data["boletim_url"],
                     meta={"row": data},
                     callback=self.parse_pdf01,
                 )
+            elif boletim_data >= getDataMarcoAtual():
+                yield scrapy.Request(
+                    url=data["boletim_url"],
+                    meta={"row": data},
+                    callback=self.parse_pdf02,
+                )                
 
 
     def parse_pdf01(self, response):
@@ -141,10 +154,30 @@ class CoronaDFSpider(scrapy.Spider):
             "state": "DF",
             "city": "",
             "place_type": "state",
-            "notified": CleanIntegerField.deserialize(total),
+            "notified":  CleanIntegerField.deserialize(total),
             "confirmed": CleanIntegerField.deserialize(confirmed),
             "discarded": CleanIntegerField.deserialize(discarded),
-            "suspect": CleanIntegerField.deserialize(investigation),
+            "suspect":   CleanIntegerField.deserialize(investigation),
+            "deaths": 0,
+            "notes": "",
+            "source_url": response.url
+        }
+
+    def parse_pdf02(self, response):
+        data = response.meta["row"]
+        boletim_data = data["boletim_data"]
+        year = boletim_data.year
+        month = boletim_data.month
+        day = boletim_data.day
+        return {
+            "date": f"{year}-{month}-{day}",
+            "state": "DF",
+            "city": "",
+            "place_type": "state",
+            "notified":  None,
+            "confirmed": None,
+            "discarded": None,
+            "suspect":   None,
             "deaths": 0,
             "notes": "",
             "source_url": response.url
