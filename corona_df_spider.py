@@ -91,6 +91,31 @@ def getPdfText(response):
     pdf_text = "".join(item for item in pdf_doc.extract_text() if item.strip())
     return pdf_text
 
+def buscaTextoTabela01Geral(pdf_text):
+    RE_FLOAT = "(\d+\,\d+)"
+    RE_DIGIT = "([-]|\d+)"
+    RE_DIGIT_TOTAL = f"(?P<total>{RE_DIGIT})"
+    RE_DIGIT_DEATHS = f"(?P<deaths>{RE_DIGIT})"
+
+    RE_CASES_TB1 = re.compile(f"Total\s+{RE_DIGIT_TOTAL}\s+{RE_FLOAT}\s+{RE_FLOAT}\s+{RE_DIGIT}?\s+{RE_DIGIT}?\s+{RE_DIGIT}?\s+{RE_FLOAT}\s+{RE_FLOAT}\s+{RE_DIGIT_DEATHS}?\s+{RE_FLOAT}\s+"
+                            f"Fonte: PAINEL COVID-19. Dados atualizados\s+")
+
+    RE_CASES = [RE_CASES_TB1]
+    resultado = None
+    for re_cases in RE_CASES:
+        cases_search = re_cases.search(pdf_text, re.IGNORECASE)
+        if cases_search:
+            groups = cases_search.groupdict()
+            total  = groups.get("total")  if "total" in groups else None
+            deaths = groups.get("deaths") if "deaths" in groups else None
+            resultado = {
+                "notified": total,
+                "deaths"  : deaths
+            }
+            break
+
+    return resultado
+
 
 class CoronaDFSpider(scrapy.Spider):
     name = "corona-df"
@@ -170,18 +195,18 @@ class CoronaDFSpider(scrapy.Spider):
 
     def parse_pdf02(self, response):
         boletim_data = response.meta["row"]["boletim_data"]
-        #pdf_text = getPdfText(response)
-        #print(pdf_text)
+        pdf_text = getPdfText(response)
+        result = buscaTextoTabela01Geral(pdf_text)
         return {
             "date": f"{boletim_data.year}-{boletim_data.month:02d}-{boletim_data.day:02d}",
             "state": "DF",
             "city": "",
             "place_type": "state",
-            "notified":  None,
+            "notified":  result["notified"],
             "confirmed": None,
             "discarded": None,
             "suspect":   None,
-            "deaths": 0,
+            "deaths": result["deaths"],
             "notes": "",
             "source_url": response.url
         }
