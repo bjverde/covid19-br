@@ -97,8 +97,10 @@ def buscaTextoTabela01Geral(pdf_text):
     RE_DIGIT_TOTAL = f"(?P<total>{RE_DIGIT})"
     RE_DIGIT_DEATHS = f"(?P<deaths>{RE_DIGIT})"
 
-    RE_CASES_TB1 = re.compile(f"Total\s+{RE_DIGIT_TOTAL}\s+{RE_FLOAT}\s+{RE_FLOAT}\s+{RE_DIGIT}?\s+{RE_DIGIT}?\s+{RE_DIGIT}?\s+{RE_FLOAT}\s+{RE_FLOAT}\s+{RE_DIGIT_DEATHS}?\s+{RE_FLOAT}\s+"
-                            f"Fonte: PAINEL COVID-19. Dados atualizados\s+")
+    RE_CASES_TB1 = re.compile(f"{RE_DIGIT}?\s+"
+                              f"{RE_DIGIT}?\s+"
+                              f"Total\s+{RE_DIGIT_TOTAL}\s+{RE_FLOAT}\s+{RE_FLOAT}\s+{RE_DIGIT}?\s+{RE_DIGIT}?\s+{RE_DIGIT}?\s+{RE_FLOAT}\s+{RE_FLOAT}\s+{RE_DIGIT_DEATHS}?\s+{RE_FLOAT}\s+"
+                              f"Fonte: PAINEL COVID-19. Dados atualizados\s+")
 
     RE_CASES = [RE_CASES_TB1]
     resultado = None
