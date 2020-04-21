@@ -7,7 +7,11 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 
 ## Notícias
 
+- [2020-04-16 UOL Notícias - Coronavírus avança para o interior do Brasil; veja evolução em mapa](https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/04/16/coronavirus-avanca-para-o-interior-do-brasil-veja-evolucao-em-mapa.htm)
+- [2020-04-16 O Estado de São Paulo - Veja a evolução do coronavírus por cidades e microrregiões do Brasil](https://www.estadao.com.br/infograficos/saude,veja-a-evolucao-do-corona-por-cidades-e-microrregioes-do-brasil,1089150)
 - [2020-04-13 CNN Brasil - Uma a cada quatro cidades do estado de São Paulo tem casos de coronavírus](https://www.cnnbrasil.com.br/nacional/2020/04/13/1-a-cada-4-cidades-do-estado-de-sao-paulo-tem-casos-de-coronavirus)
+- [2020-04-11 CoronaVírus MG - Registros em cartórios sugerem o triplo de mortes por Covid-19 em Minas Gerais
+](https://www.coronavirus-mg.com.br/post/registros-em-cart%C3%B3rios-sugerem-o-triplo-de-mortes-por-covid-19-em-minas-gerais)
 - [2020-04-08 The Intercept Brasil - Com coronavírus em disparada e UTIs lotadas, Manaus está à beira do colapso](https://theintercept.com/2020/04/08/coronavirus-manaus-uti-colapso/)
 - [2020-04-06 O Globo - Rumo ao interior: coronavírus já circula em 397 municípios além das capitais e regiões metropolitanas](https://oglobo.globo.com/brasil/rumo-ao-interior-coronavirus-ja-circula-em-397-municipios-alem-das-capitais-regioes-metropolitanas-24353176) (manchete do impresso!)
 - [2020-04-02 IJNet - COVID-19 expõe falta de democracia da informação no Brasil](https://ijnet.org/pt-br/story/covid-19-exp%C3%B5e-falta-de-democracia-da-informa%C3%A7%C3%A3o-no-brasil)
@@ -63,6 +67,10 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://dadoscoronavirus.com/brasil/
 - https://public.tableau.com/profile/thiago.ficagna#!/vizhome/Coronavirus_15851416584640/PainelCOVID19
 - https://kondado.com.br/blog/recursos-para-o-covid-19/
+- http://corona.contratempo.info/
+- https://fehann.github.io/COVID-19-Brazil/
+- https://public.flourish.studio/visualisation/1895814/
+- http://www.covidbr.info/pnl/covid.wgx?open=1
 
 
 ## Publicações Científicas
@@ -85,3 +93,6 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://www.reddit.com/r/brasil/comments/fo6ezd/o_df_possui_uma_taxa_de_contaminados_por/
 - https://www.youtube.com/watch?v=30FijUpQ1po
 - https://pt.wikipedia.org/wiki/Pandemia_de_COVID-19_no_Brasil
+- https://youtu.be/aA9q1Zk0AeU
+- https://www.tableau.com/pt-br/learn/webinars/projeto-brasilio-covid19-dados-publicos-acessiveis
+- [2o Datosy y Coronavirus](https://www.youtube.com/watch?v=C5qXnE6AlMY) ([veja os slides](http://bit.ly/socialtic-brasilio-covid19))
