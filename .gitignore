@@ -23,3 +23,7 @@ docs-build/
 docs/man/
 docs/reference/
 reg_settings.py
+
+#projeto local
+/venv_covid19
+/.vscode
