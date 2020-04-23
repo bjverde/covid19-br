@@ -7,6 +7,7 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 
 ## Notícias
 
+- [2020-04-20 Congresso em Foco - Painel traz dados da pandemia em tempo real na sua cidade e no mundo](https://congressoemfoco.uol.com.br/congresso-em-foco/painel-traz-dados-da-pandemia-em-tempo-real-na-sua-cidade-e-no-mundo/)
 - [2020-04-16 UOL Notícias - Coronavírus avança para o interior do Brasil; veja evolução em mapa](https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/04/16/coronavirus-avanca-para-o-interior-do-brasil-veja-evolucao-em-mapa.htm)
 - [2020-04-16 O Estado de São Paulo - Veja a evolução do coronavírus por cidades e microrregiões do Brasil](https://www.estadao.com.br/infograficos/saude,veja-a-evolucao-do-corona-por-cidades-e-microrregioes-do-brasil,1089150)
 - [2020-04-13 CNN Brasil - Uma a cada quatro cidades do estado de São Paulo tem casos de coronavírus](https://www.cnnbrasil.com.br/nacional/2020/04/13/1-a-cada-4-cidades-do-estado-de-sao-paulo-tem-casos-de-coronavirus)
@@ -71,6 +72,17 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://fehann.github.io/COVID-19-Brazil/
 - https://public.flourish.studio/visualisation/1895814/
 - http://www.covidbr.info/pnl/covid.wgx?open=1
+- http://covid-brasil-io.herokuapp.com/
+- https://covid-19-brazil.tasafo.org/
+- http://plataforma.longeviver.com/covid19/
+- http://dapp.fgv.br/43-da-populacao-brasileira-mora-em-municipios-sem-estrutura-recomendada-de-respiradores-ou-leitos-de-uti/
+- https://www.tavaresassessoria.com.br/coronavirus/cidades.php
+- https://www.climaesociedade.org/post/como-estamos-em-meio-pandemia
+- https://sites.almg.gov.br/coronavirus/index.html
+- https://g1.globo.com/mundo/blog/helio-gurovitz/post/2020/04/11/se-ligue-nos-links-11-de-abril.ghtml
+- https://leobezerra.github.io/covid19/colab/2020/04/01/nordeste.html
+- http://lades.peq.coppe.ufrj.br/index.php/covid-19/
+- http://infopguaifpr.com.br/docentes/hugo.perlin/mapa_covid_pr/
 
 
 ## Publicações Científicas
