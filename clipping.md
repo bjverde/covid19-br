@@ -8,13 +8,17 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 ## Notícias
 
 - [2020-04-20 Congresso em Foco - Painel traz dados da pandemia em tempo real na sua cidade e no mundo](https://congressoemfoco.uol.com.br/congresso-em-foco/painel-traz-dados-da-pandemia-em-tempo-real-na-sua-cidade-e-no-mundo/)
+- [2020-04-18 Band News - Coronavírus: pesquisa mede o ritmo de infecção no Brasil](https://www.youtube.com/watch?v=kGzapwndJwE)
+- [2020-04-16 UFMG Notícias - Estudo acompanha evolução da transmissão do coronavírus nos estados](https://ufmg.br/comunicacao/noticias/estudo-de-professor-do-dcc-acompanha-evolucao-da-transmissao-do-coronavirus-nos-estados)
 - [2020-04-16 UOL Notícias - Coronavírus avança para o interior do Brasil; veja evolução em mapa](https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/04/16/coronavirus-avanca-para-o-interior-do-brasil-veja-evolucao-em-mapa.htm)
 - [2020-04-16 O Estado de São Paulo - Veja a evolução do coronavírus por cidades e microrregiões do Brasil](https://www.estadao.com.br/infograficos/saude,veja-a-evolucao-do-corona-por-cidades-e-microrregioes-do-brasil,1089150)
 - [2020-04-13 CNN Brasil - Uma a cada quatro cidades do estado de São Paulo tem casos de coronavírus](https://www.cnnbrasil.com.br/nacional/2020/04/13/1-a-cada-4-cidades-do-estado-de-sao-paulo-tem-casos-de-coronavirus)
-- [2020-04-11 CoronaVírus MG - Registros em cartórios sugerem o triplo de mortes por Covid-19 em Minas Gerais
-](https://www.coronavirus-mg.com.br/post/registros-em-cart%C3%B3rios-sugerem-o-triplo-de-mortes-por-covid-19-em-minas-gerais)
+- [2020-04-11 CoronaVírus MG - Registros em cartórios sugerem o triplo de mortes por Covid-19 em Minas Gerais](https://www.coronavirus-mg.com.br/post/registros-em-cart%C3%B3rios-sugerem-o-triplo-de-mortes-por-covid-19-em-minas-gerais)
+- [2020-04-08 Metrópoles - Covid-19 se interioriza e chega a 581 cidades. Veja quais](https://www.metropoles.com/saude/covid-19-se-interioriza-e-chega-a-581-cidades-veja-quais)
 - [2020-04-08 The Intercept Brasil - Com coronavírus em disparada e UTIs lotadas, Manaus está à beira do colapso](https://theintercept.com/2020/04/08/coronavirus-manaus-uti-colapso/)
+- [2020-04-07 GaúchaZH - Mortes por coronavírus se concentram em poucas cidades no mundo](https://gauchazh.clicrbs.com.br/geral/noticia/2020/04/mortes-por-coronavirus-se-concentram-em-poucas-cidades-no-mundo-ck8q30xev01d101ll3aoe8uw1.html)
 - [2020-04-06 O Globo - Rumo ao interior: coronavírus já circula em 397 municípios além das capitais e regiões metropolitanas](https://oglobo.globo.com/brasil/rumo-ao-interior-coronavirus-ja-circula-em-397-municipios-alem-das-capitais-regioes-metropolitanas-24353176) (manchete do impresso!)
+- [2020-04-06 Exame - Coronavírus avança no interior do Brasil e atinge 397 municípios](https://exame.abril.com.br/brasil/coronavirus-avanca-no-interior-do-brasil-e-atinge-397-municipios/)
 - [2020-04-02 IJNet - COVID-19 expõe falta de democracia da informação no Brasil](https://ijnet.org/pt-br/story/covid-19-exp%C3%B5e-falta-de-democracia-da-informa%C3%A7%C3%A3o-no-brasil)
 - [2020-04-02 UOL Notícias - Coronavírus chega ao interior e pequenas cidades viram foco de transmissão](https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/04/02/coronavirus-chega-ao-interior-e-pequenas-cidades-viram-foco-de-transmissao.htm)
 - [2020-04-01 O Estado de São Paulo - Metade da população brasileira vive em cidades que já registraram coronavírus](https://saude.estadao.com.br/noticias/geral,metade-da-populacao-brasileira-vive-em-cidades-que-ja-registraram-coronavirus,70003255810) (manchete do impresso!)
@@ -32,8 +36,15 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - [2020-03-23 CNN Brasil - Boletins estaduais indicam quase 40 casos de coronavírus a mais do que governo](https://www.cnnbrasil.com.br/saude/2020/03/23/boletins-estaduais-indicam-quase-40-casos-de-coronavirus-a-mais-do-que-governo)
 
 
+## Podcasts
+
+- [Intervalo de Confiança](https://intervalodeconfianca.com.br/2020/04/01/ic-14-numeros-podem-explicar-uma-pandemia/)
+- [Podcast Rio Bravo](https://soundcloud.com/riobravoinvestimentos/podcast-590-alvaro-justen-o-brasilio-e-a-defesa-ao-acesso-aos-dados-publicos)
+
+
 ## Análises e Projetos
 
+- [App COVID-19 no Brasil e no Mundo](https://github.com/Gabplay/flutter_covid19_brasil) - [Download](https://bit.ly/downloadAppCovidBR)
 - [Corona Cidades - Simulador](https://coronacidades.org/simulacovid/)
 - [Onde tem Coronavírus](https://ondetemcoronavirus.com.br/)
 - [Dashboard do Brasil sobre Covid-19](https://gabrielcesar.github.io/covid-br/) por [@gabrielcesar](https://github.com/gabrielcesar)
@@ -83,16 +94,13 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://leobezerra.github.io/covid19/colab/2020/04/01/nordeste.html
 - http://lades.peq.coppe.ufrj.br/index.php/covid-19/
 - http://infopguaifpr.com.br/docentes/hugo.perlin/mapa_covid_pr/
-
+- https://app.powerbi.com/view?r=eyJrIjoiMmQ4YWZjZGItNzk0Ny00Nzk1LTg2NzQtNjJkZjA3YjVlMzczIiwidCI6IjUyYzU3MzYwLWY3MzgtNGNkOC05NGY2LWYwM2NlOWFjZDk5YiJ9
+- https://public.tableau.com/profile/noemi.da.veiga#!/vizhome/httpspublic_tableau_comnoemi_da_veiga/Cover
+- [COVID - MapBiomas](https://covid.mapbiomas.org/)
 
 ## Publicações Científicas
 
 - ?
-
-
-## Podcasts
-
-- https://intervalodeconfianca.com.br/2020/04/01/ic-14-numeros-podem-explicar-uma-pandemia/
 
 
 ## Outras Publicações
