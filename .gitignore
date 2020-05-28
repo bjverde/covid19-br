@@ -23,9 +23,13 @@ docs-build/
 docs/man/
 docs/reference/
 reg_settings.py
+<<<<<<< HEAD
 
 ## VsCode
 .vscode
 
 ## Virtualenv
 venv_covid19/* 
+=======
+.scrapy/
+>>>>>>> master

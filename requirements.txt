@@ -1,5 +1,6 @@
 --only-binary pymupdf
 
+cached_property
 click
 defusedxml>=0.6.0
 html2text
@@ -14,3 +15,6 @@ scrapy
 tqdm
 goodtables==2.4.9
 
+gunicorn
+flask
+epiweeks

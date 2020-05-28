@@ -7,6 +7,11 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 
 ## Notícias
 
+- [2020-05-12 The New York Times - 71,000 Missing Deaths: Tracking the True Toll of the Coronavirus Outbreak](https://www.nytimes.com/interactive/2020/04/21/world/coronavirus-missing-deaths.html?action=click&module=RelatedLinks&pgtype=Article)
+- [2020-05-05 Jornal Nacional - Mortes naturais aumentam 30% nas cinco cidades mais atingidas por coronavírus no Brasil](https://globoplay.globo.com/v/8533526/programa/)
+- [2020-05-04 Revista Piauí - A pandemia no interior do país](https://piaui.folha.uol.com.br/pandemia-no-interior-do-pais/)
+- [2020-04-30 Nexo Jornal - A evolução dos casos de covid-19 nos municípios brasileiros](https://www.nexojornal.com.br/grafico/2020/04/30/A-evolu%C3%A7%C3%A3o-dos-casos-de-covid-19-nos-munic%C3%ADpios-brasileiros)
+- [2020-04-29 BBC News Brasil - Coronavírus: quantos casos e mortes por covid-19 há em sua cidade?](https://www.bbc.com/portuguese/brasil-52472202)
 - [2020-04-20 Congresso em Foco - Painel traz dados da pandemia em tempo real na sua cidade e no mundo](https://congressoemfoco.uol.com.br/congresso-em-foco/painel-traz-dados-da-pandemia-em-tempo-real-na-sua-cidade-e-no-mundo/)
 - [2020-04-18 Band News - Coronavírus: pesquisa mede o ritmo de infecção no Brasil](https://www.youtube.com/watch?v=kGzapwndJwE)
 - [2020-04-16 UFMG Notícias - Estudo acompanha evolução da transmissão do coronavírus nos estados](https://ufmg.br/comunicacao/noticias/estudo-de-professor-do-dcc-acompanha-evolucao-da-transmissao-do-coronavirus-nos-estados)
@@ -61,7 +66,7 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://anticorona.io
 - https://carusojrea.maps.arcgis.com/apps/opsdashboard/index.html
 - https://covid-19.t10.digital/
-- https://covid19.getuff.com.br/panoramas/panorama-do-rio-de-janeiro
+- https://covid19.getuff.com.br/panoramas/panorama-do-rio-de-janeiro https://covid19.getuff.com.br/panoramas/panorama-de-niter%C3%B3i
 - https://covid19.ifnoar.com.br
 - https://github.com/estadao/covid-nos-estados/
 - https://github.com/inf-covid19/covid19-data
@@ -97,14 +102,22 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://app.powerbi.com/view?r=eyJrIjoiMmQ4YWZjZGItNzk0Ny00Nzk1LTg2NzQtNjJkZjA3YjVlMzczIiwidCI6IjUyYzU3MzYwLWY3MzgtNGNkOC05NGY2LWYwM2NlOWFjZDk5YiJ9
 - https://public.tableau.com/profile/noemi.da.veiga#!/vizhome/httpspublic_tableau_comnoemi_da_veiga/Cover
 - [COVID - MapBiomas](https://covid.mapbiomas.org/)
+- [Algoritmos que salvam vidas | Nerdologia Tech](https://www.youtube.com/watch?v=m0ibiy-NX9c)
+- https://valoradicionado.wordpress.com/2020/04/28/sao-paulo-e-outras-quatro-capitais-proximas-do-colapso-na-saude/
+- https://www.mamiraua.org.br/covid-amazonas
+- https://www.irrd.org/covid-19/graficos-interativos/
+- http://institutovotorantim.org.br/municipioscontraocorona/ivm/
+
 
 ## Publicações Científicas
 
-- ?
+- [COVID-19 e hospitalizações por SRAG no Brasil: uma comparação até a 12a semana epidemiológica de 2020](https://www.scielo.br/pdf/csp/v36n4/1678-4464-csp-36-04-e00070120.pdf)
+- [Short-term forecasting COVID-19 cumulative confirmed cases: Perspectives for Brazil](https://www.researchgate.net/publication/341025731_Short-term_forecasting_COVID-19_cumulative_confirmed_cases_Perspectives_for_Brazil) ([Science Direct](https://www.sciencedirect.com/science/article/pii/S0960077920302538))
 
 
 ## Outras Publicações
 
+- [2020-05-01 CWB Resiste - Entrevista com Álvaro Justen](https://medium.com/cwbresiste/n%C3%A3o-teremos-o-n%C3%BAmero-de-%C3%B3bitos-reais-enquanto-n%C3%A3o-tivermos-transpar%C3%AAncia-sobre-isso-afirma-f74fad5d673e)
 - [2020-04-12 Live do Átila Iamarino](https://www.youtube.com/watch?v=vEwDdXim8bQ)
 - [2020-03-25 Análise Descritiva do Coronavírus nos Estados Brasileiros](https://marcusnunes.me/posts/analise-descritiva-do-coronavirus/)
 - https://dev.to/diogomqbm_/in-times-of-crisis-help-others-174e
@@ -116,3 +129,5 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://youtu.be/aA9q1Zk0AeU
 - https://www.tableau.com/pt-br/learn/webinars/projeto-brasilio-covid19-dados-publicos-acessiveis
 - [2o Datosy y Coronavirus](https://www.youtube.com/watch?v=C5qXnE6AlMY) ([veja os slides](http://bit.ly/socialtic-brasilio-covid19))
+- http://www3.eca.usp.br/noticias/plataforma-mapeia-dados-sobre-covid-19-nos-estados-brasileiros
+- [Live Open Knowledge Foundation Brasil](https://www.youtube.com/watch?v=8vmbfgnRuos)
