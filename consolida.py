@@ -1,4 +1,3 @@
-import csv
 import io
 import os
 from collections import Counter, defaultdict
@@ -10,10 +9,8 @@ from urllib.parse import parse_qs, urlparse
 
 import rows
 import scrapy
-from cached_property import cached_property
 from rows.utils import load_schema
 from scrapy.exceptions import CloseSpider
-
 
 DATA_PATH = Path(__file__).parent / "data"
 ERROR_PATH = DATA_PATH / "error"
@@ -86,7 +83,6 @@ class ConsolidaSpider(scrapy.Spider):
                 spreadsheet_download_url(row.link_planilha_consolidada, "xlsx"),
                 meta={"state": row.uf, "handle_httpstatus_all": True},
                 callback=self.parse_state_file,
-
             )
 
     def parse_boletim(self, state, data):
@@ -102,7 +98,9 @@ class ConsolidaSpider(scrapy.Spider):
                 },
             )
         except Exception as exp:
-            self.errors[state].append(("boletim", state, f"{exp.__class__.__name__}: {exp}"))
+            self.errors[state].append(
+                ("boletim", state, f"{exp.__class__.__name__}: {exp}")
+            )
             return
         for boletim in boletins:
             boletim = boletim._asdict()
@@ -193,8 +191,12 @@ class ConsolidaSpider(scrapy.Spider):
                 confirmed = row["confirmed"]
                 deaths = row["deaths"]
                 NULL = (None, "")
-                if (confirmed in NULL and deaths not in NULL) or (deaths in NULL and confirmed not in NULL):
-                    message = f"ERROR: only one field is filled for {date}, {state}, {city}"
+                if (confirmed in NULL and deaths not in NULL) or (
+                    deaths in NULL and confirmed not in NULL
+                ):
+                    message = (
+                        f"ERROR: only one field is filled for {date}, {state}, {city}"
+                    )
                     self.errors[state].append(("caso", state, message))
                 result.append(row)
 
@@ -234,30 +236,38 @@ class ConsolidaSpider(scrapy.Spider):
                 else None
             )
             death_rate = (
-                row_deaths / row_confirmed if row_deaths and row_confirmed else None
+                row_deaths / row_confirmed
+                if row_deaths is not None and row_confirmed not in (None, 0)
+                else 0
             )
             row["estimated_population_2019"] = row_population
             row["city_ibge_code"] = row_city_code
             row["confirmed_per_100k_inhabitants"] = (
                 f"{confirmed_per_100k:.5f}" if confirmed_per_100k else None
             )
-            row["death_rate"] = f"{death_rate:.4f}" if death_rate else None
+            row["death_rate"] = f"{death_rate:.4f}"
             self.logger.debug(row)
             self.caso_writer.writerow(row)
 
     def parse_state_file(self, response):
         state = response.meta["state"]
         if response.status >= 400:
-            self.errors[state].append(("connection", state, f"HTTP status code: {response.status}"))
+            self.errors[state].append(
+                ("connection", state, f"HTTP status code: {response.status}")
+            )
         else:
             try:
                 self.parse_boletim(state, response.body)
             except Exception as exp:
-                self.errors[state].append(("boletim", state, f"{exp.__class__.__name__}: {exp}"))
+                self.errors[state].append(
+                    ("boletim", state, f"{exp.__class__.__name__}: {exp}")
+                )
             try:
                 self.parse_caso(state, response.body)
             except Exception as exp:
-                self.errors[state].append(("caso", state, f"{exp.__class__.__name__}: {exp}"))
+                self.errors[state].append(
+                    ("caso", state, f"{exp.__class__.__name__}: {exp}")
+                )
 
         if self.errors[state]:
             error_counter = Counter(error[0] for error in self.errors[state])

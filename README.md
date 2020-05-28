@@ -1,3 +1,5 @@
+[🇺🇸 English?](README.en.md)
+
 # covid19-br
 
 ![pytest@docker](https://github.com/turicas/covid19-br/workflows/pytest@docker/badge.svg)
@@ -51,7 +53,9 @@ dados](https://drive.google.com/open?id=1escumcbjS8inzAKvuXOQocMcQ8ZCqbyHU5X5hFr
 Caso queira analisar os dados usando SQL, veja o script
 [`analysis.sh`](analysis.sh) (ele baixa e converte os CSVs para um banco de
 dados SQLite e já cria índices e *views* que facilitam o trabalho) e os
-arquivos na pasta [`sql/`](sql/).
+arquivos na pasta [`sql/`](sql/). Por padrão o script reutiliza os arquivos
+caso já tenha baixado; para sempre baixar a versão mais atual dos dados,
+execute `./analysis.sh --clean`.
 
 ### Validando os dados
 
