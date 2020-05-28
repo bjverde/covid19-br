@@ -1,4 +1,3 @@
-import csv
 import io
 import os
 from collections import Counter, defaultdict
@@ -10,10 +9,8 @@ from urllib.parse import parse_qs, urlparse
 
 import rows
 import scrapy
-from cached_property import cached_property
 from rows.utils import load_schema
 from scrapy.exceptions import CloseSpider
-
 
 DATA_PATH = Path(__file__).parent / "data"
 ERROR_PATH = DATA_PATH / "error"
@@ -56,8 +53,11 @@ def get_state_population(state):
 
 
 def spreadsheet_download_url(url_or_id, file_format):
-    if url_or_id.startswith("http"):
-        spreadsheet_id = parse_qs(urlparse(url_or_id).query)["id"][0]
+    parsed = urlparse(url_or_id)
+    if parsed.netloc == "brasil.io":
+        return url_or_id
+    elif url_or_id.startswith("http"):
+        spreadsheet_id = parse_qs(parsed.query)["id"][0]
     else:
         spreadsheet_id = url_or_id
     return f"https://docs.google.com/spreadsheets/u/0/d/{spreadsheet_id}/export?format={file_format}&id={spreadsheet_id}"
@@ -66,6 +66,9 @@ def spreadsheet_download_url(url_or_id, file_format):
 class ConsolidaSpider(scrapy.Spider):
     name = "consolida"
     start_urls = [spreadsheet_download_url(STATE_LINKS_SPREADSHEET_ID, "csv")]
+    custom_settings = {
+        "CONCURRENT_REQUESTS_PER_DOMAIN": 4,
+    }
 
     def __init__(self, boletim_filename, caso_filename, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -77,8 +80,8 @@ class ConsolidaSpider(scrapy.Spider):
         table = rows.import_from_csv(io.BytesIO(response.body), encoding="utf-8")
         for row in table:
             yield scrapy.Request(
-                spreadsheet_download_url(row.planilha_brasilio, "xlsx"),
-                meta={"state": row.uf},
+                spreadsheet_download_url(row.link_planilha_consolidada, "xlsx"),
+                meta={"state": row.uf, "handle_httpstatus_all": True},
                 callback=self.parse_state_file,
             )
 
@@ -95,7 +98,9 @@ class ConsolidaSpider(scrapy.Spider):
                 },
             )
         except Exception as exp:
-            self.errors[state].append(("boletim", state, f"{exp.__class__.__name__}: {exp}"))
+            self.errors[state].append(
+                ("boletim", state, f"{exp.__class__.__name__}: {exp}")
+            )
             return
         for boletim in boletins:
             boletim = boletim._asdict()
@@ -186,8 +191,12 @@ class ConsolidaSpider(scrapy.Spider):
                 confirmed = row["confirmed"]
                 deaths = row["deaths"]
                 NULL = (None, "")
-                if (confirmed in NULL and deaths not in NULL) or (deaths in NULL and confirmed not in NULL):
-                    message = f"ERROR: only one field is filled for {date}, {state}, {city}"
+                if (confirmed in NULL and deaths not in NULL) or (
+                    deaths in NULL and confirmed not in NULL
+                ):
+                    message = (
+                        f"ERROR: only one field is filled for {date}, {state}, {city}"
+                    )
                     self.errors[state].append(("caso", state, message))
                 result.append(row)
 
@@ -227,28 +236,39 @@ class ConsolidaSpider(scrapy.Spider):
                 else None
             )
             death_rate = (
-                row_deaths / row_confirmed if row_deaths and row_confirmed else None
+                row_deaths / row_confirmed
+                if row_deaths is not None and row_confirmed not in (None, 0)
+                else 0
             )
             row["estimated_population_2019"] = row_population
             row["city_ibge_code"] = row_city_code
             row["confirmed_per_100k_inhabitants"] = (
                 f"{confirmed_per_100k:.5f}" if confirmed_per_100k else None
             )
-            row["death_rate"] = f"{death_rate:.4f}" if death_rate else None
+            row["death_rate"] = f"{death_rate:.4f}"
             self.logger.debug(row)
             self.caso_writer.writerow(row)
 
     def parse_state_file(self, response):
         state = response.meta["state"]
+        if response.status >= 400:
+            self.errors[state].append(
+                ("connection", state, f"HTTP status code: {response.status}")
+            )
+        else:
+            try:
+                self.parse_boletim(state, response.body)
+            except Exception as exp:
+                self.errors[state].append(
+                    ("boletim", state, f"{exp.__class__.__name__}: {exp}")
+                )
+            try:
+                self.parse_caso(state, response.body)
+            except Exception as exp:
+                self.errors[state].append(
+                    ("caso", state, f"{exp.__class__.__name__}: {exp}")
+                )
 
-        try:
-            self.parse_boletim(state, response.body)
-        except Exception as exp:
-            self.errors[state].append(("boletim", state, f"{exp.__class__.__name__}: {exp}"))
-        try:
-            self.parse_caso(state, response.body)
-        except Exception as exp:
-            self.errors[state].append(("caso", state, f"{exp.__class__.__name__}: {exp}"))
         if self.errors[state]:
             error_counter = Counter(error[0] for error in self.errors[state])
             error_counter_str = ", ".join(

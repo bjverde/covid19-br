@@ -1,3 +1,5 @@
+[🇺🇸 English?](README.en.md)
+
 # covid19-br
 
 ![pytest@docker](https://github.com/turicas/covid19-br/workflows/pytest@docker/badge.svg)
@@ -7,15 +9,17 @@ Secretarias Estaduais de Saúde (SES) sobre os casos de covid19 no Brasil (por
 município por dia), além de outros dados relevantes para a análise, como óbitos
 registrados em cartório (por estado por dia).
 
-## Licença
+## Licença e Citação
 
 A licença do código é [LGPL3](https://www.gnu.org/licenses/lgpl-3.0.en.html) e
 dos dados convertidos [Creative Commons Attribution
 ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/). Caso utilize os
-dados, **cite a fonte original e quem tratou os dados**, como: **Fonte:
-Secretarias de Saúde das Unidades Federativas, dados tratados por Álvaro
-Justen/[Brasil.IO](https://brasil.io/)**. Caso compartilhe os dados, **utilize
-a mesma licença**.
+dados, **cite a fonte original e quem tratou os dados** e caso compartilhe os
+dados, **utilize a mesma licença**.
+Exemplos de como os dados podem ser citados:
+- **Fonte: Secretarias de Saúde das Unidades Federativas, dados tratados por Álvaro Justen e equipe de voluntários [Brasil.IO](https://brasil.io/)**
+- **Brasil.IO: boletins epidemiológicos da COVID-19 por município por dia, disponível em: https://brasil.io/dataset/covid19/ (última atualização: XX de XX de XXXX, acesso em XX de XX de XXXX).**
+
 
 ## Dados
 
@@ -49,7 +53,9 @@ dados](https://drive.google.com/open?id=1escumcbjS8inzAKvuXOQocMcQ8ZCqbyHU5X5hFr
 Caso queira analisar os dados usando SQL, veja o script
 [`analysis.sh`](analysis.sh) (ele baixa e converte os CSVs para um banco de
 dados SQLite e já cria índices e *views* que facilitam o trabalho) e os
-arquivos na pasta [`sql/`](sql/).
+arquivos na pasta [`sql/`](sql/). Por padrão o script reutiliza os arquivos
+caso já tenha baixado; para sempre baixar a versão mais atual dos dados,
+execute `./analysis.sh --clean`.
 
 ### Validando os dados
 

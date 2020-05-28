@@ -4,6 +4,10 @@ Para entender quais decisões tomamos no trabalho de coleta, normalização e
 checagem dos dados [veja a metodologia de coleta de
 dados](https://drive.google.com/open?id=1escumcbjS8inzAKvuXOQocMcQ8ZCqbyHU5X5hFrPpn4).
 
+## Como citar a base de dados COVID-19 do Brasil.IO?
+
+Leia a seção [Licença e citação](https://github.com/turicas/covid19-br/blob/master/README.md#licen%C3%A7a-e-cita%C3%A7%C3%A3o) do README desse repositório.
+
 
 ## As contagens estaduais podem ser diferentes das municipais?
 
@@ -34,8 +38,11 @@ a probabilidade é baixa.
 
 ## Alguns municípios não possuem dados ou não possuem dados para muitas datas, como devo proceder para pegar o histórico?
 
-Só temos dados disponíveis a partir do primeiro caso confirmado/divulgado pela
-Secretaria Estadual de Saúde.
+A tabela `caso` só possui dados disponíveis a partir do primeiro caso
+confirmado/divulgado pela Secretaria Estadual de Saúde e não possui dados para
+todos os dias (nem todas as SES divulgam boletins diários). Caso queira uma
+tabela com valores por município por dia para todos os dias possíveis, veja a
+tabela `caso_full`.
 
 
 ## O site da prefeitura do meu município tem dados mais atuais que os de vocês! Como devo fazer para atualizar?
@@ -56,7 +63,8 @@ incluí-los. Por favor, não insista.
 ## A API não está limitando a quantidade de casos, o que pode ser?
 
 A API tem paginação (10.000 registros por página). Você deve requisitar a
-página que está linkada em `next` no resultado.
+página que está linkada em `next` no resultado. [Leia a documentação da
+API](api.md) para mais detalhes.
 
 
 ## Por que o número de óbitos dos cartórios divulgado pelo Brasil.IO está diferente do divulgado pelo Portal da Transparência do Registro Civil?

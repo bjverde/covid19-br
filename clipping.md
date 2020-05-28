@@ -7,13 +7,23 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 
 ## Notícias
 
+- [2020-05-12 The New York Times - 71,000 Missing Deaths: Tracking the True Toll of the Coronavirus Outbreak](https://www.nytimes.com/interactive/2020/04/21/world/coronavirus-missing-deaths.html?action=click&module=RelatedLinks&pgtype=Article)
+- [2020-05-05 Jornal Nacional - Mortes naturais aumentam 30% nas cinco cidades mais atingidas por coronavírus no Brasil](https://globoplay.globo.com/v/8533526/programa/)
+- [2020-05-04 Revista Piauí - A pandemia no interior do país](https://piaui.folha.uol.com.br/pandemia-no-interior-do-pais/)
+- [2020-04-30 Nexo Jornal - A evolução dos casos de covid-19 nos municípios brasileiros](https://www.nexojornal.com.br/grafico/2020/04/30/A-evolu%C3%A7%C3%A3o-dos-casos-de-covid-19-nos-munic%C3%ADpios-brasileiros)
+- [2020-04-29 BBC News Brasil - Coronavírus: quantos casos e mortes por covid-19 há em sua cidade?](https://www.bbc.com/portuguese/brasil-52472202)
+- [2020-04-20 Congresso em Foco - Painel traz dados da pandemia em tempo real na sua cidade e no mundo](https://congressoemfoco.uol.com.br/congresso-em-foco/painel-traz-dados-da-pandemia-em-tempo-real-na-sua-cidade-e-no-mundo/)
+- [2020-04-18 Band News - Coronavírus: pesquisa mede o ritmo de infecção no Brasil](https://www.youtube.com/watch?v=kGzapwndJwE)
+- [2020-04-16 UFMG Notícias - Estudo acompanha evolução da transmissão do coronavírus nos estados](https://ufmg.br/comunicacao/noticias/estudo-de-professor-do-dcc-acompanha-evolucao-da-transmissao-do-coronavirus-nos-estados)
 - [2020-04-16 UOL Notícias - Coronavírus avança para o interior do Brasil; veja evolução em mapa](https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/04/16/coronavirus-avanca-para-o-interior-do-brasil-veja-evolucao-em-mapa.htm)
 - [2020-04-16 O Estado de São Paulo - Veja a evolução do coronavírus por cidades e microrregiões do Brasil](https://www.estadao.com.br/infograficos/saude,veja-a-evolucao-do-corona-por-cidades-e-microrregioes-do-brasil,1089150)
 - [2020-04-13 CNN Brasil - Uma a cada quatro cidades do estado de São Paulo tem casos de coronavírus](https://www.cnnbrasil.com.br/nacional/2020/04/13/1-a-cada-4-cidades-do-estado-de-sao-paulo-tem-casos-de-coronavirus)
-- [2020-04-11 CoronaVírus MG - Registros em cartórios sugerem o triplo de mortes por Covid-19 em Minas Gerais
-](https://www.coronavirus-mg.com.br/post/registros-em-cart%C3%B3rios-sugerem-o-triplo-de-mortes-por-covid-19-em-minas-gerais)
+- [2020-04-11 CoronaVírus MG - Registros em cartórios sugerem o triplo de mortes por Covid-19 em Minas Gerais](https://www.coronavirus-mg.com.br/post/registros-em-cart%C3%B3rios-sugerem-o-triplo-de-mortes-por-covid-19-em-minas-gerais)
+- [2020-04-08 Metrópoles - Covid-19 se interioriza e chega a 581 cidades. Veja quais](https://www.metropoles.com/saude/covid-19-se-interioriza-e-chega-a-581-cidades-veja-quais)
 - [2020-04-08 The Intercept Brasil - Com coronavírus em disparada e UTIs lotadas, Manaus está à beira do colapso](https://theintercept.com/2020/04/08/coronavirus-manaus-uti-colapso/)
+- [2020-04-07 GaúchaZH - Mortes por coronavírus se concentram em poucas cidades no mundo](https://gauchazh.clicrbs.com.br/geral/noticia/2020/04/mortes-por-coronavirus-se-concentram-em-poucas-cidades-no-mundo-ck8q30xev01d101ll3aoe8uw1.html)
 - [2020-04-06 O Globo - Rumo ao interior: coronavírus já circula em 397 municípios além das capitais e regiões metropolitanas](https://oglobo.globo.com/brasil/rumo-ao-interior-coronavirus-ja-circula-em-397-municipios-alem-das-capitais-regioes-metropolitanas-24353176) (manchete do impresso!)
+- [2020-04-06 Exame - Coronavírus avança no interior do Brasil e atinge 397 municípios](https://exame.abril.com.br/brasil/coronavirus-avanca-no-interior-do-brasil-e-atinge-397-municipios/)
 - [2020-04-02 IJNet - COVID-19 expõe falta de democracia da informação no Brasil](https://ijnet.org/pt-br/story/covid-19-exp%C3%B5e-falta-de-democracia-da-informa%C3%A7%C3%A3o-no-brasil)
 - [2020-04-02 UOL Notícias - Coronavírus chega ao interior e pequenas cidades viram foco de transmissão](https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/04/02/coronavirus-chega-ao-interior-e-pequenas-cidades-viram-foco-de-transmissao.htm)
 - [2020-04-01 O Estado de São Paulo - Metade da população brasileira vive em cidades que já registraram coronavírus](https://saude.estadao.com.br/noticias/geral,metade-da-populacao-brasileira-vive-em-cidades-que-ja-registraram-coronavirus,70003255810) (manchete do impresso!)
@@ -31,8 +41,15 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - [2020-03-23 CNN Brasil - Boletins estaduais indicam quase 40 casos de coronavírus a mais do que governo](https://www.cnnbrasil.com.br/saude/2020/03/23/boletins-estaduais-indicam-quase-40-casos-de-coronavirus-a-mais-do-que-governo)
 
 
+## Podcasts
+
+- [Intervalo de Confiança](https://intervalodeconfianca.com.br/2020/04/01/ic-14-numeros-podem-explicar-uma-pandemia/)
+- [Podcast Rio Bravo](https://soundcloud.com/riobravoinvestimentos/podcast-590-alvaro-justen-o-brasilio-e-a-defesa-ao-acesso-aos-dados-publicos)
+
+
 ## Análises e Projetos
 
+- [App COVID-19 no Brasil e no Mundo](https://github.com/Gabplay/flutter_covid19_brasil) - [Download](https://bit.ly/downloadAppCovidBR)
 - [Corona Cidades - Simulador](https://coronacidades.org/simulacovid/)
 - [Onde tem Coronavírus](https://ondetemcoronavirus.com.br/)
 - [Dashboard do Brasil sobre Covid-19](https://gabrielcesar.github.io/covid-br/) por [@gabrielcesar](https://github.com/gabrielcesar)
@@ -49,7 +66,7 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://anticorona.io
 - https://carusojrea.maps.arcgis.com/apps/opsdashboard/index.html
 - https://covid-19.t10.digital/
-- https://covid19.getuff.com.br/panoramas/panorama-do-rio-de-janeiro
+- https://covid19.getuff.com.br/panoramas/panorama-do-rio-de-janeiro https://covid19.getuff.com.br/panoramas/panorama-de-niter%C3%B3i
 - https://covid19.ifnoar.com.br
 - https://github.com/estadao/covid-nos-estados/
 - https://github.com/inf-covid19/covid19-data
@@ -71,20 +88,36 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://fehann.github.io/COVID-19-Brazil/
 - https://public.flourish.studio/visualisation/1895814/
 - http://www.covidbr.info/pnl/covid.wgx?open=1
+- http://covid-brasil-io.herokuapp.com/
+- https://covid-19-brazil.tasafo.org/
+- http://plataforma.longeviver.com/covid19/
+- http://dapp.fgv.br/43-da-populacao-brasileira-mora-em-municipios-sem-estrutura-recomendada-de-respiradores-ou-leitos-de-uti/
+- https://www.tavaresassessoria.com.br/coronavirus/cidades.php
+- https://www.climaesociedade.org/post/como-estamos-em-meio-pandemia
+- https://sites.almg.gov.br/coronavirus/index.html
+- https://g1.globo.com/mundo/blog/helio-gurovitz/post/2020/04/11/se-ligue-nos-links-11-de-abril.ghtml
+- https://leobezerra.github.io/covid19/colab/2020/04/01/nordeste.html
+- http://lades.peq.coppe.ufrj.br/index.php/covid-19/
+- http://infopguaifpr.com.br/docentes/hugo.perlin/mapa_covid_pr/
+- https://app.powerbi.com/view?r=eyJrIjoiMmQ4YWZjZGItNzk0Ny00Nzk1LTg2NzQtNjJkZjA3YjVlMzczIiwidCI6IjUyYzU3MzYwLWY3MzgtNGNkOC05NGY2LWYwM2NlOWFjZDk5YiJ9
+- https://public.tableau.com/profile/noemi.da.veiga#!/vizhome/httpspublic_tableau_comnoemi_da_veiga/Cover
+- [COVID - MapBiomas](https://covid.mapbiomas.org/)
+- [Algoritmos que salvam vidas | Nerdologia Tech](https://www.youtube.com/watch?v=m0ibiy-NX9c)
+- https://valoradicionado.wordpress.com/2020/04/28/sao-paulo-e-outras-quatro-capitais-proximas-do-colapso-na-saude/
+- https://www.mamiraua.org.br/covid-amazonas
+- https://www.irrd.org/covid-19/graficos-interativos/
+- http://institutovotorantim.org.br/municipioscontraocorona/ivm/
 
 
 ## Publicações Científicas
 
-- ?
-
-
-## Podcasts
-
-- https://intervalodeconfianca.com.br/2020/04/01/ic-14-numeros-podem-explicar-uma-pandemia/
+- [COVID-19 e hospitalizações por SRAG no Brasil: uma comparação até a 12a semana epidemiológica de 2020](https://www.scielo.br/pdf/csp/v36n4/1678-4464-csp-36-04-e00070120.pdf)
+- [Short-term forecasting COVID-19 cumulative confirmed cases: Perspectives for Brazil](https://www.researchgate.net/publication/341025731_Short-term_forecasting_COVID-19_cumulative_confirmed_cases_Perspectives_for_Brazil) ([Science Direct](https://www.sciencedirect.com/science/article/pii/S0960077920302538))
 
 
 ## Outras Publicações
 
+- [2020-05-01 CWB Resiste - Entrevista com Álvaro Justen](https://medium.com/cwbresiste/n%C3%A3o-teremos-o-n%C3%BAmero-de-%C3%B3bitos-reais-enquanto-n%C3%A3o-tivermos-transpar%C3%AAncia-sobre-isso-afirma-f74fad5d673e)
 - [2020-04-12 Live do Átila Iamarino](https://www.youtube.com/watch?v=vEwDdXim8bQ)
 - [2020-03-25 Análise Descritiva do Coronavírus nos Estados Brasileiros](https://marcusnunes.me/posts/analise-descritiva-do-coronavirus/)
 - https://dev.to/diogomqbm_/in-times-of-crisis-help-others-174e
@@ -96,3 +129,5 @@ você pode propor uma mudança nesse arquivo diretamente pelo botão "editar". :
 - https://youtu.be/aA9q1Zk0AeU
 - https://www.tableau.com/pt-br/learn/webinars/projeto-brasilio-covid19-dados-publicos-acessiveis
 - [2o Datosy y Coronavirus](https://www.youtube.com/watch?v=C5qXnE6AlMY) ([veja os slides](http://bit.ly/socialtic-brasilio-covid19))
+- http://www3.eca.usp.br/noticias/plataforma-mapeia-dados-sobre-covid-19-nos-estados-brasileiros
+- [Live Open Knowledge Foundation Brasil](https://www.youtube.com/watch?v=8vmbfgnRuos)
